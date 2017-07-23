@@ -1,0 +1,245 @@
+Question No : 1 -
+Which of the following statements is true when querying the extended attributes of a file
+that has no extended attributes set?
+A. getfattr will print a warning and exit with a value of 0.
+B. getfattr will print a warning and exit with a value of 1.
+C. No output will be produced and getfattr will exit with a value of 0.
+D. No output will be produced and getfattr will exit with a value of 1.
+
+Answer : C
+
+Question No : 2 -
+Which directive must be set to 0 in a host or service definition to prevent Nagios from
+sending more than one alert for a particular event? (Specify only the directive without any
+options or parameters).
+
+Answer : notification_interval
+
+Question No : 3 -
+What are the steps which must be followed to enable serverwide zone transfers between
+two BIND 9 servers securely using TSIG?
+A. Generate a key, specify the public key in the named configuration on both servers, create a server statement in the named configuration on both servers.
+B. Generate a key, specify the private key in the named configuration on both servers, create a server statement in the named configuration on both servers.
+C. Generate a key, specify the private key in the named configuration on one server and the public key in the named configuration on the other, create a remote statement in the named configuration on both servers.
+D. Generate a key, specify the private key in the named configuration on one server and the public key in the named configuration on the other, create a server statement in the named configuration on both servers.
+
+Answer : B
+
+Question No : 4 -
+Where is the global list of known SSH host keys located? (Supply the full path and
+filename)
+
+Answer : /etc/ssh/ssh_known_hosts
+
+Question No : 5 -
+SELinux is a Linux feature that:
+A. monitors system file access by unprivileged users and warns them when they are trying to gain access to files beyond their permission levels set in the Mandatory Access Control policies.
+B. provides only Mandatory Access Control policies. Additional access control models such as Rolebased access control require additional tools to implement.
+C. enforces Mandatory Access Control policies that can restrict user space programs and system servers to the minimum amount of privilege required to operate correctly.
+D. ensures that system files referenced in the Mandatory Access Control policies are not modified and alerts administrators when changes occur.
+
+Answer : C
+
+Question No : 6 -
+On a new Linux system, the root user is being asked to provide the root user password
+before being able to use the su command. What line in the /etc/pam.d/su file will allow root
+to use su without supplying passwords?
+A. auth required pam_norootpw.so
+B. auth sufficient pam_norootpw.so
+C. auth required pam_rootok.so
+D. auth sufficient pam_rootok.so
+
+Answer : D
+
+Question No : 7 -
+What command will list basic information about all targets available to cryptmount?
+(Provide the command with any options or parameters)
+
+Answer :  cryptmount --list /usr/bin/cryptmount -l /usr/bin/cryptmount --list cryptmount -l
+
+
+Question No : 8 -
+What is the syntax error in the following simple Puppet configuration file?
+class test_class {
+file { "/tmp/test.txt":
+mode => 600,
+owner => root,
+group => root
+# Define the node
+node testclient {
+isa test_class
+
+A. Comments begin with // character and not a #.
+B. The colon (:) after /tmp/test.txt should be a semicolon (;).
+C. class, node and file sections require a semicolon (;) at the end of their definitions.
+D. isa should be include.
+
+Answer : D
+
+Question No : 9 -
+Which tool, distributed with BIND 9, will check the syntax of a named configuration file?
+(Supply only the program name, without any options or parameters)
+
+Answer : namedcheckconf /usr/sbin/named- checkconf
+
+Question No : 10 -
+Under which path is the selinux pseudofilesystem found?
+A. /dev/selinux
+B. /sys/selinux
+C. /selinux
+D. /var/selinux
+E. /proc/selinux
+
+Answer : C
+
+
+Question No : 11 -
+What is the difference between an SELinux domain and an SELinux type?
+A. A domain is a group of SELinux types.
+B. A domain defines the range of access that an object has. A type is used to define an access level.
+C. A domain is assigned to processes while a type is assigned to objects such as files and directories.
+D. A domain is an alternative keyword for type.
+
+Answer : C
+
+
+Question No : 12 -
+What openssl command will generate a selfsigned test certificate?
+A. openssl req new x509 key privkey.pem out cacert.pem days 365
+B. openssl sign key privkey.pem out cacert.pem days 365
+C. openssl req key privkey.pem out cacert.pem days 365
+D. openssl sign new x509 key privkey.pem out cacert.pem days 365
+
+Answer : A
+
+Question No : 13 -
+What openssl command will generate a certificate signing request (CSR) using the private
+key file privkey.pem?
+A. openssl req key privkey.pem out cert.csr
+B. openssl req new key privkey.pem out cert.csr
+C. openssl gencsr key privkey.pem out cert.csr
+D. openssl gencsr new key privkey.pem out cert.csr
+
+Answer : B
+
+Question No : 14 -
+You have downloaded a file named file.tgz along with a signature file named file.tgz.asc.
+Which commands can be used to verify that file.tgz has not been tampered with since the
+file creator created the signature?
+Assume that you have already retrieved the public key of the file creator. (Select THREE
+correct answers)
+A. gpg verify file.tgz.asc file.tgz
+B. gpg verify file.tgz
+C. gpg verify file.tgz.asc
+D. gpgv verify file.tgz.asc
+E. gpgv file.tgz.asc
+
+Answer: A,C,E
+
+Question No : 15 -
+Which LUKS action, when supplied to the cryptsetup command, will initialize a LUKS
+partition and set the initial key? (Provide only the action name)
+
+Answer : luksFormat
+
+Question No : 16 -
+What is the purpose of snort inline?
+A. To run the snort daemon without forking child processes.
+B. To have iptables use snort rules to filter packets.
+C. To have snort log suspicious activity only, without performing any actions
+D. To run the snort daemon as a nonroot user.
+
+Answer : B
+
+Question No : 17 -
+Which GPG command is used to sign a public key? (Select TWO correct answers)
+A. gpg signpublickey UID
+B. gpg signkey UID
+C. gpg sign UID
+D. gpg editkey UID followed with the sign command.
+E. gpg editkey UID followed with the confirm command.
+
+Answer : B,D
+
+
+Question No : 18 -
+Which of the following rule directives will email kevin@example.com and
+matt@example.com when the Mail Configuration rule is violated?
+A. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@example.com, emailto = matt@example.com )
+B. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@example.com,matt@example.com )
+C. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@example.com;matt@example.com )
+D. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@example.com, emailcc = matt@example.com )
+
+Answer : C
+
+Question No : 19 -
+An administrator can prevent dictionary based attacks against an OpenSSH server by
+forcing keybased authentication with which TWO parameters in sshd_config?
+A. PasswordAuthentication
+B. HostKey
+C. PrivatekeyAuthentication
+D. PubkeyAuthentication
+E. ServerKey
+
+Answer : A,D
+
+Question No : 20 -
+Which of the following can be done to secure a BIND server? (Select THREE correct
+answers)
+A. Run the BIND daemon as a nonroot user.
+B. Configure ACLs.
+C. Require clients to authenticate with a password before querying the server.
+D. Run the BIND daemon in a chroot jail
+E. Encrypt DNS traffic using SSL/TLS.
+
+Answer: A,B,E
+
+Question No : 21 -
+In Nessus, what does the acronym NASL stand for?
+
+Answer : Nessus Attack Scripting Language
+
+Question No : 22 -
+You are certain that your kernel has been compiled with ACL support, however, when you
+try to set an ACL on a file, you get the following output:
+% setfacl m user:hugh:r afile.txt
+setfacl: afile.txt: Operation not supported
+What is the most likely reason for this problem?
+A. There is an error in the command line parameters.
+B. There is no user on the system named hugh.
+C. The partition has not been mounted with the acl option.
+D. The file afile.txt doesn't exist.
+
+Answer : C
+
+Question No : 23 -
+Which of the following are valid ntop deployment scenarios? (Select THREE correct
+answers)
+A. Public Site
+B. Switched Gateway
+C. Simple Host
+D. Border Gateway
+E. Mirror Line
+
+Answer: C,D,E
+
+Question No : 24 -
+Which of the following are common techniques for securing a sendmail server? (Select
+THREE correct answers)
+A. Maintain user accounts in an LDAP directory.
+B. Enable TLS.
+C. Disable VRFY.
+D. Run sendmail in a chroot'd environment.
+E. Disable USRLKUP.
+
+Answer: B,C,D
+
+Question No : 25 -
+Which of the following are valid Nagios objects? (Select THREE correct answers)
+A. Contacts
+B. Commands
+C. Host Groups
+D. Notification Groups
+E. Programs
+
+Anwser: A,B,C 
