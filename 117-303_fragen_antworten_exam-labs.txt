@@ -336,3 +336,52 @@ Postfix daemons can be chroot'd by setting the chroot flag in ____________. (Sup
 the filename, without a path)
 
 Answer : master.cf
+
+Question No : 36 -
+A user that is allowed to use the su command under SELinux is also allowed to switch from
+the user role to the sysadmin role. What command will run a new shell for the user in the
+new context? (Specify the command only, with no path, options or arguments)
+
+Answer : newrole
+
+Question No : 37 -
+Which of the following export options, when specified in /etc/exports, will tell the server to
+use the NFSv4 Pseudofilesystem?
+A. fsid=2
+B. fsid=0
+C. fsid=3
+D. fsid=1
+
+Answer : B
+
+Question No : 38 -
+An unprivileged user issued a command which produced the following log message:
+avc: denied { getattr } for pid=984 exe=/usr/bin/vim path=/etc/shadow dev=03:01
+ino=134343
+scontext=hugh:user_r:user_t tcontext=system_u:object_r:shadow_t tclass=file
+What does the message mean?
+A. User hugh was not running in a security context that permitted reading the file.
+B. User hugh only needs to switch to the object_r role in order to edit /etc/shadow.
+C. The security context for hugh is misconfigured and needs access to read any system file.
+D. User hugh was not running in a security context that permitted writing to the file.
+
+Answer : A
+
+Question No : 39 -
+What does ntop use for data collection?
+A. Network packets
+B. Log files
+C. Frame relay
+D. SNMP
+
+Answer : A
+
+Question No : 40 -
+The openssl command can be used to test connections with various secure services. What
+command will open a connection with a remote POP3S (POP3 over SSL) server?
+A. openssl connect host pop.example.com:pop3s
+B. openssl connect pop.example.com:pop3s
+C. openssl s_client connect pop.example.com:pop3s
+D. openssl s_client pop.example.com:pop3s
+
+Answer : C
