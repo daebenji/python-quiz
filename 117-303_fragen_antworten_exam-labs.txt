@@ -385,3 +385,48 @@ C. openssl s_client connect pop.example.com:pop3s
 D. openssl s_client pop.example.com:pop3s
 
 Answer : C
+
+Question No : 41 -
+Specifying the ___________ parameter in sshd_config will allow the administrator to
+systematically provide access to certain user accounts by name.
+Answer : AllowUsers
+
+Question No : 42 -
+What does the following iptables rule accomplish:
+iptables A INPUT s !127.0.0.0/8 p tcp dport 111 j DROP
+A. Drops all packets from the LAN destined for port 111.
+B. Drops all packets originating from the local machine unless they are destined for port 111.
+C. Drops all packets destined for port 111 which originate from the local machine.
+D. Drops all packets destined for port 111 unless they are from the local machine.
+
+Answer : D
+
+Question No : 43 -
+An administrator has just configured vsftp and notices that she cannot follow symbolic links
+when connected to the FTP server. What is the most likely reason for this?
+A. The follow_symlinks=no option has been set in vsftpd.conf.
+B. vsftpd is running in a chroot environment.
+C. This installation of vsftpd was not compiled with support for symbolic links.
+D. The user account she is connecting with is not listed in /etc/security/ftpusers.
+
+Answer : B
+
+Question No : 44 -
+SELinux has just been installed on a Linux system and the administrator wants to use
+SELinux in permissive mode in order to audit the various services on the system. What
+command will switch SELinux into permissive mode?
+A. setenforce 0
+B. /etc/init.d/selinux stop
+C. selinux passive
+D. /etc/init.d/selinux startpassive
+
+Answer : A
+
+Question No : 45 -
+Which GPG command will publish a public key to a public key server?
+A. gpg exportkeys UID
+B. gpg publishkeys UID
+C. gpg sendkeys UID
+D. gpg pushkeys UID
+
+Answer : C
