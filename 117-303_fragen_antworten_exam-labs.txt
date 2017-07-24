@@ -243,3 +243,96 @@ D. Notification Groups
 E. Programs
 
 Anwser: A,B,C 
+
+Question No : 26 -
+Which of the following statements are advantages that Mandatory Access Control has over
+Discretionary Access Control models? (Select TWO correct answers)
+A. MAC policies are easier to configure than use of DAC.
+B. MAC adds the concept of privileged remote users which is not available with simple DAC.
+C. MAC policies increase the ability of the root user to correct errors.
+D. MAC lets the kernel help decide if an object, such as a device or process, can access another object.
+E. Trust is placed in the administrators and not in individual users.
+
+Answer : D,E
+
+
+Question No : 27 -
+Which of the following are valid NFSv4 security types?
+A. RSA
+B. SSL
+C. SPKM
+D. Kerberos
+E. LIPKEY
+
+Answer : C,D,E
+
+Question No : 28 -
+The apache administrator has added the following lines to the configuration files:
+<Directory />
+AllowOverride None
+</Directory>
+What is the purpose of this directive?
+A. It stops users from serving HTML files from their home directories.
+B. It prevents HTML files from being served out of the / directory.
+C. It stops users from setting up .htaccess files unless specifically allowed in additional configuration.
+D. It prevents CGI scripts from modifying apache features dynamically.
+
+Answer : C
+
+Question No : 29 -
+Which utility is used for retrieving, setting, and removing NFSv4 ACLs? (Supply only the
+command name, with no options or parameters)
+
+Answer : nfs4acl /usr/sbin/nfs4acl
+
+Question No : 30 -
+An administrator has created a mapping with the following command:
+cryptsetup luksOpen /dev/sda1 cryptvol and has set three different keys. Which command
+below will delete the first key?
+A. cryptsetup luksDelKey /dev/sda1 0
+B. cryptsetup luksDelKey /dev/sda1 1
+C. cryptsetup luksDelKey /dev/mapper/cryptvol 1
+D. cryptsetup luksDelKey /dev/mapper/cryptvol 0
+
+Answer : A
+
+Question No : 31 -
+An administrator has successfully configured a cryptographic volume for dmcrypt, and has
+added the following line to /etc/fstab:
+/dev/mapper/cryptvol /media/crypt auto defaults 0 0
+Upon booting the system, the error message "mount: special device /dev/mapper/cryptvol
+does not exist" is displayed. What configuration file has the administrator forgotten to edit?
+(Provide the full path and filename)
+
+Answer : /etc/crypttab
+
+Question No : 32 -
+Which command will set the user.author attribute on the file afile.txt?
+A. setfattr user.author:"A. Author" afile.txt
+B. setfattr n user.author v "A. Author" afile.txt
+C. setfattr user.author="A. Author" afile.txt
+D. setfattr a user.author="A. Author" afile.txt
+
+Answer : B
+
+Question No : 33 -
+Which parameter in vsftp.conf will restrict users to their home directory? (Supply only the
+parameter name, with no options or values)
+
+Answer : chroot_local_user
+
+Question No : 34 -
+When a user logs into a system using SSH, what is the format of SELinux security context
+which will assign the user_r role and the user_t domain to their login sessions?
+A. user_r:user_t system_r:sshd_t
+B. sshd_t:system_r user_t:user_r
+C. system_r:sshd_t user_r:user_t
+D. user_t:user_r sshd_t:system_r
+
+Answer : C
+
+Question No : 35 -
+Postfix daemons can be chroot'd by setting the chroot flag in ____________. (Supply only
+the filename, without a path)
+question_answerVIEW ANSWER
+Answer : master.cf
