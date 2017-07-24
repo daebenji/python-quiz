@@ -334,5 +334,5 @@ Answer : C
 Question No : 35 -
 Postfix daemons can be chroot'd by setting the chroot flag in ____________. (Supply only
 the filename, without a path)
-question_answerVIEW ANSWER
+
 Answer : master.cf
