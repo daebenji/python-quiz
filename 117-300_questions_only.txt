@@ -1,0 +1,858 @@
+Question No : 1 -
+Which of the following statements is true when querying the extended attributes of a file
+that has no extended attributes set?
+A. getfattr will print a warning and exit with a value of 0.
+B. getfattr will print a warning and exit with a value of 1.
+C. No output will be produced and getfattr will exit with a value of 0.
+D. No output will be produced and getfattr will exit with a value of 1.
+
+
+Question No : 2 -
+Which directive must be set to 0 in a host or service definition to prevent Nagios from
+sending more than one alert for a particular event? (Specify only the directive without any
+options or parameters).
+
+
+Question No : 3 -
+What are the steps which must be followed to enable serverwide zone transfers between
+two BIND 9 servers securely using TSIG?
+A. Generate a key, specify the public key in the named configuration on both servers, create a server statement in the named configuration on both servers.
+B. Generate a key, specify the private key in the named configuration on both servers, create a server statement in the named configuration on both servers.
+C. Generate a key, specify the private key in the named configuration on one server and the public key in the named configuration on the other, create a remote statement in the named configuration on both servers.
+D. Generate a key, specify the private key in the named configuration on one server and the public key in the named configuration on the other, create a server statement in the named configuration on both servers.
+
+
+Question No : 4 -
+Where is the global list of known SSH host keys located? (Supply the full path and
+filename)
+
+
+Question No : 5 -
+SELinux is a Linux feature that:
+A. monitors system file access by unprivileged users and warns them when they are trying to gain access to files beyond their permission levels set in the Mandatory Access Control policies.
+B. provides only Mandatory Access Control policies. Additional access control models such as Rolebased access control require additional tools to implement.
+C. enforces Mandatory Access Control policies that can restrict user space programs and system servers to the minimum amount of privilege required to operate correctly.
+D. ensures that system files referenced in the Mandatory Access Control policies are not modified and alerts administrators when changes occur.
+
+
+Question No : 6 -
+On a new Linux system, the root user is being asked to provide the root user password
+before being able to use the su command. What line in the /etc/pam.d/su file will allow root
+to use su without supplying passwords?
+A. auth required pam_norootpw.so
+B. auth sufficient pam_norootpw.so
+C. auth required pam_rootok.so
+D. auth sufficient pam_rootok.so
+
+
+Question No : 7 -
+What command will list basic information about all targets available to cryptmount?
+(Provide the command with any options or parameters)
+
+
+
+Question No : 8 -
+What is the syntax error in the following simple Puppet configuration file?
+class test_class {
+file { "/tmp/test.txt":
+mode => 600,
+owner => root,
+group => root
+# Define the node
+node testclient {
+isa test_class
+
+A. Comments begin with // character and not a #.
+B. The colon (:) after /tmp/test.txt should be a semicolon (;).
+C. class, node and file sections require a semicolon (;) at the end of their definitions.
+D. isa should be include.
+
+
+Question No : 9 -
+Which tool, distributed with BIND 9, will check the syntax of a named configuration file?
+(Supply only the program name, without any options or parameters)
+
+
+Question No : 10 -
+Under which path is the selinux pseudofilesystem found?
+A. /dev/selinux
+B. /sys/selinux
+C. /selinux
+D. /var/selinux
+E. /proc/selinux
+
+
+
+Question No : 11 -
+What is the difference between an SELinux domain and an SELinux type?
+A. A domain is a group of SELinux types.
+B. A domain defines the range of access that an object has. A type is used to define an access level.
+C. A domain is assigned to processes while a type is assigned to objects such as files and directories.
+D. A domain is an alternative keyword for type.
+
+
+
+Question No : 12 -
+What openssl command will generate a selfsigned test certificate?
+A. openssl req new x509 key privkey.pem out cacert.pem days 365
+B. openssl sign key privkey.pem out cacert.pem days 365
+C. openssl req key privkey.pem out cacert.pem days 365
+D. openssl sign new x509 key privkey.pem out cacert.pem days 365
+
+
+Question No : 13 -
+What openssl command will generate a certificate signing request (CSR) using the private
+key file privkey.pem?
+A. openssl req key privkey.pem out cert.csr
+B. openssl req new key privkey.pem out cert.csr
+C. openssl gencsr key privkey.pem out cert.csr
+D. openssl gencsr new key privkey.pem out cert.csr
+
+
+Question No : 14 -
+You have downloaded a file named file.tgz along with a signature file named file.tgz.asc.
+Which commands can be used to verify that file.tgz has not been tampered with since the
+file creator created the signature?
+Assume that you have already retrieved the public key of the file creator. (Select THREE
+A. gpg verify file.tgz.asc file.tgz
+B. gpg verify file.tgz
+C. gpg verify file.tgz.asc
+D. gpgv verify file.tgz.asc
+E. gpgv file.tgz.asc
+
+
+Question No : 15 -
+Which LUKS action, when supplied to the cryptsetup command, will initialize a LUKS
+partition and set the initial key? (Provide only the action name)
+
+
+Question No : 16 -
+What is the purpose of snort inline?
+A. To run the snort daemon without forking child processes.
+B. To have iptables use snort rules to filter packets.
+C. To have snort log suspicious activity only, without performing any actions
+D. To run the snort daemon as a nonroot user.
+
+
+Question No : 17 -
+A. gpg signpublickey UID
+B. gpg signkey UID
+C. gpg sign UID
+D. gpg editkey UID followed with the sign command.
+E. gpg editkey UID followed with the confirm command.
+
+
+
+Question No : 18 -
+Which of the following rule directives will email kevin@example.com and
+matt@example.com when the Mail Configuration rule is violated?
+A. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@example.com, emailto = matt@example.com )
+B. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@example.com,matt@example.com )
+C. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@example.com;matt@example.com )
+D. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@example.com, emailcc = matt@example.com )
+
+
+Question No : 19 -
+An administrator can prevent dictionary based attacks against an OpenSSH server by
+forcing keybased authentication with which TWO parameters in sshd_config?
+A. PasswordAuthentication
+B. HostKey
+C. PrivatekeyAuthentication
+D. PubkeyAuthentication
+E. ServerKey
+
+
+Question No : 20 -
+Which of the following can be done to secure a BIND server? (Select THREE correct
+A. Run the BIND daemon as a nonroot user.
+B. Configure ACLs.
+C. Require clients to authenticate with a password before querying the server.
+D. Run the BIND daemon in a chroot jail
+E. Encrypt DNS traffic using SSL/TLS.
+
+
+Question No : 21 -
+In Nessus, what does the acronym NASL stand for?
+
+
+Question No : 22 -
+You are certain that your kernel has been compiled with ACL support, however, when you
+try to set an ACL on a file, you get the following output:
+% setfacl m user:hugh:r afile.txt
+setfacl: afile.txt: Operation not supported
+What is the most likely reason for this problem?
+A. There is an error in the command line parameters.
+B. There is no user on the system named hugh.
+C. The partition has not been mounted with the acl option.
+D. The file afile.txt doesn't exist.
+
+
+Question No : 23 -
+Which of the following are valid ntop deployment scenarios? (Select THREE correct
+A. Public Site
+B. Switched Gateway
+C. Simple Host
+D. Border Gateway
+E. Mirror Line
+
+
+Question No : 24 -
+Which of the following are common techniques for securing a sendmail server? (Select
+A. Maintain user accounts in an LDAP directory.
+B. Enable TLS.
+C. Disable VRFY.
+D. Run sendmail in a chroot'd environment.
+E. Disable USRLKUP.
+
+
+Question No : 25 -
+A. Contacts
+B. Commands
+C. Host Groups
+D. Notification Groups
+E. Programs
+
+Anwser: A,B,C
+
+Question No : 26 -
+Which of the following statements are advantages that Mandatory Access Control has over
+A. MAC policies are easier to configure than use of DAC.
+B. MAC adds the concept of privileged remote users which is not available with simple DAC.
+C. MAC policies increase the ability of the root user to correct errors.
+D. MAC lets the kernel help decide if an object, such as a device or process, can access another object.
+E. Trust is placed in the administrators and not in individual users.
+
+
+
+Question No : 27 -
+Which of the following are valid NFSv4 security types?
+A. RSA
+B. SSL
+C. SPKM
+D. Kerberos
+E. LIPKEY
+
+
+Question No : 28 -
+The apache administrator has added the following lines to the configuration files:
+<Directory />
+AllowOverride None
+</Directory>
+What is the purpose of this directive?
+A. It stops users from serving HTML files from their home directories.
+B. It prevents HTML files from being served out of the / directory.
+C. It stops users from setting up .htaccess files unless specifically allowed in additional configuration.
+D. It prevents CGI scripts from modifying apache features dynamically.
+
+
+Question No : 29 -
+Which utility is used for retrieving, setting, and removing NFSv4 ACLs? (Supply only the
+command name, with no options or parameters)
+
+
+Question No : 30 -
+An administrator has created a mapping with the following command:
+cryptsetup luksOpen /dev/sda1 cryptvol and has set three different keys. Which command
+below will delete the first key?
+A. cryptsetup luksDelKey /dev/sda1 0
+B. cryptsetup luksDelKey /dev/sda1 1
+C. cryptsetup luksDelKey /dev/mapper/cryptvol 1
+D. cryptsetup luksDelKey /dev/mapper/cryptvol 0
+
+
+Question No : 31 -
+An administrator has successfully configured a cryptographic volume for dmcrypt, and has
+added the following line to /etc/fstab:
+/dev/mapper/cryptvol /media/crypt auto defaults 0 0
+Upon booting the system, the error message "mount: special device /dev/mapper/cryptvol
+does not exist" is displayed. What configuration file has the administrator forgotten to edit?
+(Provide the full path and filename)
+
+
+Question No : 32 -
+Which command will set the user.author attribute on the file afile.txt?
+A. setfattr user.author:"A. Author" afile.txt
+B. setfattr n user.author v "A. Author" afile.txt
+C. setfattr user.author="A. Author" afile.txt
+D. setfattr a user.author="A. Author" afile.txt
+
+
+Question No : 33 -
+Which parameter in vsftp.conf will restrict users to their home directory? (Supply only the
+parameter name, with no options or values)
+
+
+Question No : 34 -
+When a user logs into a system using SSH, what is the format of SELinux security context
+which will assign the user_r role and the user_t domain to their login sessions?
+A. user_r:user_t system_r:sshd_t
+B. sshd_t:system_r user_t:user_r
+C. system_r:sshd_t user_r:user_t
+D. user_t:user_r sshd_t:system_r
+
+
+Question No : 35 -
+Postfix daemons can be chroot'd by setting the chroot flag in ____________. (Supply only
+the filename, without a path)
+
+
+Question No : 36 -
+A user that is allowed to use the su command under SELinux is also allowed to switch from
+the user role to the sysadmin role. What command will run a new shell for the user in the
+new context? (Specify the command only, with no path, options or arguments)
+
+
+Question No : 37 -
+Which of the following export options, when specified in /etc/exports, will tell the server to
+use the NFSv4 Pseudofilesystem?
+A. fsid=2
+B. fsid=0
+C. fsid=3
+D. fsid=1
+
+
+Question No : 38 -
+An unprivileged user issued a command which produced the following log message:
+avc: denied { getattr } for pid=984 exe=/usr/bin/vim path=/etc/shadow dev=03:01
+ino=134343
+scontext=hugh:user_r:user_t tcontext=system_u:object_r:shadow_t tclass=file
+What does the message mean?
+A. User hugh was not running in a security context that permitted reading the file.
+B. User hugh only needs to switch to the object_r role in order to edit /etc/shadow.
+C. The security context for hugh is misconfigured and needs access to read any system file.
+D. User hugh was not running in a security context that permitted writing to the file.
+
+
+Question No : 39 -
+What does ntop use for data collection?
+A. Network packets
+B. Log files
+C. Frame relay
+D. SNMP
+
+
+Question No : 40 -
+The openssl command can be used to test connections with various secure services. What
+command will open a connection with a remote POP3S (POP3 over SSL) server?
+A. openssl connect host pop.example.com:pop3s
+B. openssl connect pop.example.com:pop3s
+C. openssl s_client connect pop.example.com:pop3s
+D. openssl s_client pop.example.com:pop3s
+
+
+Question No : 41 -
+Specifying the ___________ parameter in sshd_config will allow the administrator to
+systematically provide access to certain user accounts by name.
+
+Question No : 42 -
+What does the following iptables rule accomplish:
+iptables A INPUT s !127.0.0.0/8 p tcp dport 111 j DROP
+A. Drops all packets from the LAN destined for port 111.
+B. Drops all packets originating from the local machine unless they are destined for port 111.
+C. Drops all packets destined for port 111 which originate from the local machine.
+D. Drops all packets destined for port 111 unless they are from the local machine.
+
+
+Question No : 43 -
+An administrator has just configured vsftp and notices that she cannot follow symbolic links
+when connected to the FTP server. What is the most likely reason for this?
+A. The follow_symlinks=no option has been set in vsftpd.conf.
+B. vsftpd is running in a chroot environment.
+C. This installation of vsftpd was not compiled with support for symbolic links.
+D. The user account she is connecting with is not listed in /etc/security/ftpusers.
+
+
+Question No : 44 -
+SELinux has just been installed on a Linux system and the administrator wants to use
+SELinux in permissive mode in order to audit the various services on the system. What
+command will switch SELinux into permissive mode?
+A. setenforce 0
+B. /etc/init.d/selinux stop
+C. selinux passive
+D. /etc/init.d/selinux startpassive
+
+
+Question No : 45 -
+Which GPG command will publish a public key to a public key server?
+A. gpg exportkeys UID
+B. gpg publishkeys UID
+C. gpg sendkeys UID
+D. gpg pushkeys UID
+
+
+Question No : 46 -
+Which of the following methods can be used to deactivate a rule in Snort? (Select TWO
+A. Place a # in front of the rule and restart snort.
+B. Write a pass rule in local.rules and restart snort with the o option.
+C. Delete the rule and snort will automatically reread its rules files within five minutes.
+D. Add the rule to /etc/snort/rules.deactivated and it will take effect immediately.
+
+
+Question No : 47 -
+What does the following iptables rule accomplish:
+iptables A INPUT s 208.77.188.166 d 10.142.232.1 p tcp dport 22 j ACCEPT
+A. Accepts traffic on port 22 only from the hosts 208.77.188.166 and 10.142.232.1.
+B. Forwards all requests from the host 10.142.232.1 on port 22 the internal host 208.77.188.166
+C. Forwards all requests from the host 208.77.188.166 on port 22 the internal host 10.142.232.1
+D. Drops traffic on port 22 only from the hosts 208.77.188.166 and 10.142.232.1.
+
+
+Question No : 48 -
+Which directive in the OpenVPN client.conf specifies the remote server and port that the
+client should connect to? (Provide only the directive, without any options or parameters)
+
+
+Question No : 49 -
+An administrator has just configured an OpenVPN client. Upon starting the service, the
+following message is displayed:
+TLS Error: TLS key negotiation failed to occur within 60 seconds
+Which of the following statements is true?
+A. The client was unable to establish a network connection with the server.
+B. The client was able to establish a network connection with the server, however TLS key negotiation failed, resulting in a fallback to SSL.
+C. The client was able to establish a network connection with the server, however TLS and SSL security are not enabled.
+D. The client was able to establish a network connection with the server, however TLS key negotiation took longer than 60 seconds, indicating that there may be a problem with network performance.
+
+
+Question No : 50 -
+You wish to revoke write access for all groups and named users on a file. Which command
+will make the correct ACL changes?
+A. setfacl x group:*:rx,user:*:rx afile
+B. setfacl x mask::rx afile
+C. setfacl m mask::rx afile
+D. setfacl m group:*:rx,user:*:rx afile
+
+
+Question No : 51 -
+Which of the following lines in the OpenVPN server.conf file will supply a DNS server for
+DHCP clients to use?
+A. push "dhcpoption DNS 10.142.232.4"
+B. push "dhcp DNS 10.142.232.4"
+C. push "options DNS 10.142.232.4"
+D. push "dhcpoptions DNS 10.142.232.4"
+
+
+Question No : 52 -
+There is a configuration file being managed by RCS. Based on timestamps, it appears that
+someone has modified the file without checking it into RCS. What command can be used to
+compare the configuration file with the latest committed version? (Specify the command
+only, no path or argument information)
+
+
+Question No : 53 -
+An SELinux security context is required to ensure that all files in /opt have the default
+context of
+system_u:object_r:usr_t. How should the corresponding configuration entry be formatted?
+A. system_u:object_r:usr_t /opt/*
+B. /opt/.* system_u:object_r:usr_t
+C. /opt/* system_u:object_r:usr_t
+D. system_u:object_r:usr_t: /opt/.*
+E. system_u:object_r:usr_t /opt/.*
+
+
+Question No : 54 -
+Which command will list all of the extended attributes on the file afile.txt along with the
+values?
+A. getfattr all afile.txt
+B. getfattr afile.txt
+C. getfattr list afile.txt
+D. getfattr dump afile.txt
+
+
+Question No : 55 -
+What is the purpose of tripwire?
+A. To act as a honeypot and attract attackers.
+B. To enforce mandatory access control policies to confine users to the minimum amount of privilege required.
+C. To monitor a server for breakin attempts and, if desired, ban the IP address.
+D. To identify changes to critical system files and directories.
+
+
+Question No : 56 -
+Which openssl command is used to inspect the information stored in a certificate?
+A. x509
+B. show
+C. info
+D. req
+
+
+Question No : 57 -
+Which command is used to add an additional name, email address and comment to an
+existing private key?
+A. gpg editkey name followed with the adduid command.
+B. gpg addsubkey name
+C. gpg addalias name
+D. gpg genalias name
+
+
+Question No : 58 -
+By default, when verifying a signed file or a file with a detached signature, which keyring is
+used to search for public keys?
+A. ~/.gnupg/trustdb.gpg
+B. ~/.gnupg/secring.gpg
+C. ~/.gnupg/trustedkeys.gpg
+D. ~/.gnupg/pubring.gpg
+
+
+Question No : 59 -
+Which of the following commands will create a new, signed tw.pol file?
+A. twadmin createpolfile e S mykey.key /etc/tripwire/twpol.txt
+B. twadmin createcfgfile S mykey.key /etc/tripwire/twpol.txt
+C. twadmin createpolfile S mykey.key /etc/tripwire/twpol.txt
+D. twadmin createcfgfile e S mykey.key /etc/tripwire/twpol.txt
+
+
+Question No : 60 -
+The command 'nmap sS O 10.142.232.10' produces the following output:
+PORT STATE SERVICE
+631/tcp open ipp
+3306/tcp open mysql
+A. A simple scan was launched.
+B. The scan was executed by the root user.
+C. Output will be sent to a file instead of stdout.
+D. A stealth SYN scan was launched.
+E. There are no other services running on this machine.
+
+
+Question No : 61 -
+The system administrator is keeping local configuration file changes in RCS. What
+command will commit the file to RCS revision control AND keep a local, unlocked copy of
+the latest version of the file?
+A. ci file
+B. rcs commit file
+C. rcs o file
+D. ci u file
+
+Question No : 62 -
+A user is attempting to connect to a remote host via SSH and following message is
+displayed: Host key verification failed. Which of the following options could resolve the
+A. Add the o StrictHostKeyChecking=no option to the command.
+B. Enable the PasswordAuthentication parameter on the remote host.
+C. Generate new SSH host keys on the remote host.
+D. Generate a new private key which is compatible with the server's host key.
+E. Update the remote host's SSH host key in the list of know hosts.
+
+Question No : 63 -
+Linux Extended Attributes include attribute classes. Which of the following are included in
+A. default
+B. system
+C. owner
+D. trusted
+E. user
+
+Question No : 64 -
+Which of the following are valid OpenVPN authentication modes? (Choose TWO correct
+A. S/Key
+B. Kerberos
+C. Static Key
+D. Password
+E. TLS
+
+Question No : 65 -
+What command is used to create and maintain a Basic Authentication password file for
+apache? (Specify only the command, with no path or arguments)
+
+Question No : 66 -
+What is the default UDP port for OpenVPN traffic?
+
+Question No : 67 -
+DNS servers are vulnerable to which of the following attacks? (Select THREE correct
+A. Cache Poisoning
+B. Fork Bomb Attack
+C. PasswordBased Attack
+D. ManintheMiddle
+E. Smurf Attack
+
+Question No : 68 -
+A. Consolidating the number of open lookup tables.
+B. Creating and querying Postfix alias databases.
+C. Mapping mail user IDs to system accounts.
+D. Overcoming chroot restrictions.
+E. Creating and querying Postfix lookup tables.
+
+Question No : 69 -
+The system administrator wishes to use John the Ripper to confirm that the passwords in a
+file called passwords are not weak. john has finished but the terminal window running the
+program has closed. What command can be used to list any cracked passwords for this
+file?
+A. john list passwords
+B. john list
+C. john show
+D. john show passwords
+
+Question No : 70 -
+In apache configuration which directives are used to restrict access based on host/domain
+name and IP address?
+A. restrict and allow
+B. order, allow from and deny from
+C. deny and accept
+D. allow IP, deny IP, allow DOMAIN and deny DOMAIN
+E. order, deny and accept
+
+Question No : 71 -
+What command will remove the dmcrypt mapping named cryptvol? (Provide the command
+with any options and parameters)
+
+Question No : 72 -
+Which of the following parameters should be set in main.cf to enable TLS in Postfix?
+A. smtpd_tls_cert_file, smtpd_tls_key_file, smtpd_tls_CAfile, smtpd_use_tls
+B. smtpd_tls_key_file, smtpd_tls_CAfile, smtpd_use_tls, smtpd_tls_pem_file
+C. smtpd_tls_CAfile, smtpd_use_tls, smtpd_tls_pem_file, smtpd_tls_cert_file
+D. smtpd_use_tls, smtpd_tls_pem_file, smtpd_tls_cert_file, smtpd_tls_key_file
+
+Question No : 73 -
+The system administrator wishes to use the pam_listfile.so module to restrict which users
+are allowed to login via SSH. Which line will configure this behaviour?
+A. auth required pam_listfile.so item=user sense=deny file=/etc/sshd/sshd.deny onerr=succeed
+B. auth required pam_listfile.so item=user sense=allow file=/etc/sshd/sshd.allow onerr=succeed
+C. auth required pam_listfile.so item=user sense=allow file=/etc/sshd/sshd.allow onerr=fail
+D. auth required pam_listfile.so item=user sense=deny file=/etc/sshd/sshd.deny onerr=fail
+
+Question No : 74 -
+When adding additional users to a file's extended ACLs, what is true about the default
+behaviour of the ACL mask for the file?
+A. The mask is modified to be the union of all permissions of the file owner, owning group and all named users and groups.
+B. The mask is left unchanged.
+C. If required, a warning is printed indicating that the mask is too restrictive for the permissions being granted.
+D. The mask is modified to be the union of all permissions of the owning group and all named users and groups.
+
+Question No : 75 -
+The local system administrator has created a configuration entry for apache version 2 that
+isn't working. What is wrong with the following configuration?
+<Location /members>
+AuthName Members
+AuthType Basic
+AuthUserFile /www/passwd
+</Location>
+A. The directive require validuser is missing.
+B. Basic Authentication has been removed from Apache 2.x.
+C. The format of the password file is not specified.
+D. The AuthUserFile must be in the apache configuration directory.
+
+Question No : 76 -
+Which of the following is not an iptables rule set?
+A. chain
+B. mangle
+C. filter
+D. nat
+
+Question No : 77 -
+Someone who wishes to receive an encrypted file has provided a key UID and a key
+fingerprint for verification to the data sender. Assuming that this key is on a public
+keyserver, what command will fetch the public key from the server?
+A. gpg findkeys UID
+B. gpg recvkeys UID
+C. gpg getkeys UID
+D. gpg refreshkeys UID
+
+Question No : 78 -
+With SELinux, what is the command that is used for changing the context of a file? (Specify
+the command only, with no path information or arguments)
+
+Question No : 79 -
+What does the following iptables rule accomplish:
+iptables A INPUT d 10.142.232.1 p tcp dport 20:21 j ACCEPT
+A. Forwards all traffic not on port 20 or 21 to the host 10.142.232.1.
+B. Drops all traffic coming from the host 10.142.232.1 destined for port 20 or 21.
+C. Accepts all traffic from the host 10.142.232.1 destined for port 20 or 21.
+D. Forwards all traffic on port 20 and 21 to the host 10.142.232.1.
+
+
+Question No : 80 -
+In the Puppet centralized configuration management tool, a manifest is:
+A. a list of all target configurations.
+B. a configuration document that describes the target configuration and the steps required to achieve it.
+C. a list of all files related to a configuration target.
+D. a list of the important services on a target configuration.
+
+
+Question No : 81 -
+How are SELinux permissions related to standard Linux permissions?
+A. SELinux permissions override standard Linux permissions.
+B. Standard Linux permissions override SELinux permissions.
+C. SELinux permissions are verified before standard Linux permissions.
+D. SELinux permissions are verified after standard Linux permissions.
+
+
+Question No : 82 -
+Which of the following statements are true about Linux Extended Attributes on files?
+A. An attribute value may be empty.
+B. Attribute storage counts toward disk quota use.
+C. Attribute use is enabled by mounting a partition with the attr option.
+D. An attribute is file, not inode, specific. Thus, a hard linked file in two locations could have different attributes.
+E. Attributes are not used by SELinux and other kernel security modules.
+
+
+Question No : 83 -
+A. XTS
+B. ESSIV
+C. GMR
+D. KWG
+E. LRW
+
+
+Question No : 84 -
+An administrator is capturing traffic with Wireshark and is only seeing ARP traffic. What is
+the most likely cause of this?
+A. The network interface on which the scan is running is not in promiscuous mode.
+B. The machine is on a switched network and is therefore only seeing local and broadcast/multicast packets.
+C. The administrator did not enable the TCP and UDP options when starting the scan.
+D. The network interface on which the scan is running has the ARP_ONLY flag set.
+
+
+Question No : 85 -
+What does the following iptables rule accomplish:
+iptables A INPUT s 208.77.188.166 j DROP
+A. Forwards all incoming traffic to the host 208.77.188.166.
+B. Accepts all traffic from 208.77.188.166.
+C. Nothing, there is a syntax error.
+D. Drops all traffic from 208.77.188.166.
+
+Question No : 86 -
+Which GPG command is used to create a revocation certificate in case a GPG key ever
+needs to be cancelled?
+A. gpg genrevoke name
+B. gpg editkey name followed with the revoke command.
+C. gpg revoke name
+D. gpg createrevoke name
+
+
+Question No : 87 -
+What openssl command will generate a private RSA key of 2048 bits and no passphrase?
+A. openssl genrsa des3 out privkey.pem 2048
+B. openssl genrsa out privkey.pem 2048
+C. openssl genrsa nopass out privkey.pem 2048
+D. openssl genrsa nopass des3 out privkey.pem 2048
+
+
+Question No : 88 -
+What is one of the primary claimed benefits of Smack over SELinux?
+A. Smack implements Rule Set Based Access Control. SELinux doesn't support this model.
+B. SELinux has export restrictions placed on it by the NSA.
+C. Configuration of Smack is much more simple.
+D. Smack allows users to share files without administrator intervention.
+
+
+Question No : 89 -
+Which of the following are common techniques for securing Nagios? (Select THREE
+A. Require authentication for access to the CGI scripts.
+B. Run Nagios in a chroot jail.
+C. Compile Nagios with the enabletls option.
+D. Do not run as the root user.
+E. Disable external commands.
+
+
+Question No : 90 -
+Which of the following is NOT included in a Snort rule header?
+A. protocol
+B. action
+C. source IP address
+D. packet byte offset
+E. source port
+
+
+Question No : 91 -
+What is the purpose of the Safe Checks option in a Nessus configuration?
+A. Enables secure scanning over an encrypted tunnel.
+B. To prevent the use of plugins which may have a negative effect on the network being scanned.
+C. To prevent the use of plugins which may leave the Nessus server vulnerable during the scanning process.
+D. When validating a Nessus configuration file, the nessusd process will not be interrupted.
+
+
+Question No : 92 -
+A user is attempting to connect to a remote server via SSH and receives the following
+message:
+The authenticity of host 'mail.example.com (208.77.188.166)' can't be established.
+RSA key fingerprint is 92:32:55:e9:c4:20:ae:1b:2c:d7:91:40:90:89:1c:ad.
+Are you sure you want to continue connecting (yes/no)?
+What does this indicate?
+A. The RSA key fingerprint was found in the SpamCop database, indicating that the remote host is a known spammer.
+B. The user's SSH client was unable to connect to the remote host's authentication agent for verification.
+C. The user's SSH client is incompatible with the server's RSA key.
+D. The server's SSH host key cannot be found in the list of known hosts.
+
+
+Question No : 93 -
+Which of the following are builtin chains for the iptables nat table? (Select THREE correct
+A. OUTPUT
+B. INPUT
+C. PROCESSING
+D. POSTROUTING
+E. PREROUTING
+
+
+Question No : 94 -
+Which of the following is NOT and valid scan technique with nmap?
+A. Window
+B. SYN
+C. ACK
+D. Connect()
+E. RST
+
+
+Question No : 95 -
+What is true about the permissions for the file afile given the following output from getfacl?
+% getfacl afile
+# file: afile
+# owner: matt
+# group: support
+user::rwx
+user:hugh:rw
+group::r
+group:staff:rx
+mask::rwx
+other::r
+A. Anyone in the support group will be able to read and execute the file.
+B. The user hugh will be able to read the contents of the file.
+C. Anyone in the users group will be able to read the file.
+D. The user matt will not be able to edit this file.
+E. Anyone in the staff group will be able to read and execute the file.
+
+
+Question No : 96 -
+Which option is required to syslogd in order for it to accept remote log messages?
+A. s
+B. r
+C. remote
+D. l
+
+
+Question No : 97 -
+Which statements are true of the following Wireshark capture filter:
+(tcp[2:2] > 1500 and tcp[2:2] < 1550) or (tcp[4:2] > 1500 and tcp[4:2] < 1550)
+A. Every packet being checked has a 2 byte offset.
+B. Traffic on ports 15001550 is being captured.
+C. Traffic on ports 15011549 is being captured.
+D. Only two bytes are being checked in each packet.
+E. Up to four bytes are being check in each packet.
+
+
+Question No : 98 -
+Which syslog configuration line will send out logged messages to a remote syslog server?
+A. *.* host:remotehost
+B. *.* remote remotehost
+C. *.* @remotehost
+D. *.* host=remotehost
+
+
+Question No : 99 -
+In which of the following scenarios MUST an administrator use ethernet bridging instead of
+A. Some OpenVPN clients will be installed on laptops and must be able to connect from different locations.
+B. NetBIOS traffic must be able to traverse the VPN without implementing a WINS server.
+C. The IPv4 protocol is required.
+D. It will be necessary to use an MTU setting other than the default.
+E. The IPX protocol is required.
+
+
+Question No : 100 -
+What is an SO rule in the context of Snort?
+A. A loadable snort module.
+B. A rule which can be written in the Perl programming language.
+C. A simple object.
+D. A snort overflow
+
+
+Question No : 101 -
+How does AppArmor configure its access control settings?
+A. AppArmor does not require any configuration.
+B. AppArmor inspects the Linux system to determine which applications are installed and configures itself. This configuration can then be modified manually.
+C. AppArmor relies on precompiled policies. These policies are updated with new releases or can be downloaded periodically.
+D. A profile is assigned per application that specifies the system resources available to the application.
