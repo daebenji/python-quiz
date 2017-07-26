@@ -135,6 +135,7 @@ D. To run the snort daemon as a nonroot user.
 
 
 Question No : 17 -
+Which GPG command is used to sign a public key? (Select TWO correct answers)
 A. gpg signpublickey UID
 B. gpg signkey UID
 C. gpg sign UID
