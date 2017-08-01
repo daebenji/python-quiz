@@ -6,12 +6,10 @@ B. getfattr will print a warning and exit with a value of 1.
 C. No output will be produced and getfattr will exit with a value of 0.
 D. No output will be produced and getfattr will exit with a value of 1.
 
-
 Question No : 2 -
 Which directive must be set to 0 in a host or service definition to prevent Nagios from
 sending more than one alert for a particular event? (Specify only the directive without any
 options or parameters).
-
 
 Question No : 3 -
 What are the steps which must be followed to enable serverwide zone transfers between
@@ -21,11 +19,9 @@ B. Generate a key, specify the private key in the named configuration on both se
 C. Generate a key, specify the private key in the named configuration on one server and the public key in the named configuration on the other, create a remote statement in the named configuration on both servers.
 D. Generate a key, specify the private key in the named configuration on one server and the public key in the named configuration on the other, create a server statement in the named configuration on both servers.
 
-
 Question No : 4 -
 Where is the global list of known SSH host keys located? (Supply the full path and
 filename)
-
 
 Question No : 5 -
 SELinux is a Linux feature that:
@@ -33,7 +29,6 @@ A. monitors system file access by unprivileged users and warns them when they ar
 B. provides only Mandatory Access Control policies. Additional access control models such as Rolebased access control require additional tools to implement.
 C. enforces Mandatory Access Control policies that can restrict user space programs and system servers to the minimum amount of privilege required to operate correctly.
 D. ensures that system files referenced in the Mandatory Access Control policies are not modified and alerts administrators when changes occur.
-
 
 Question No : 6 -
 On a new Linux system, the root user is being asked to provide the root user password
@@ -44,12 +39,9 @@ B. auth sufficient pam_norootpw.so
 C. auth required pam_rootok.so
 D. auth sufficient pam_rootok.so
 
-
 Question No : 7 -
 What command will list basic information about all targets available to cryptmount?
 (Provide the command with any options or parameters)
-
-
 
 Question No : 8 -
 What is the syntax error in the following simple Puppet configuration file?
@@ -61,17 +53,14 @@ group => root
 # Define the node
 node testclient {
 isa test_class
-
 A. Comments begin with // character and not a #.
 B. The colon (:) after /tmp/test.txt should be a semicolon (;).
 C. class, node and file sections require a semicolon (;) at the end of their definitions.
 D. isa should be include.
 
-
 Question No : 9 -
 Which tool, distributed with BIND 9, will check the syntax of a named configuration file?
 (Supply only the program name, without any options or parameters)
-
 
 Question No : 10 -
 Under which path is the selinux pseudofilesystem found?
@@ -81,16 +70,12 @@ C. /selinux
 D. /var/selinux
 E. /proc/selinux
 
-
-
 Question No : 11 -
 What is the difference between an SELinux domain and an SELinux type?
 A. A domain is a group of SELinux types.
 B. A domain defines the range of access that an object has. A type is used to define an access level.
 C. A domain is assigned to processes while a type is assigned to objects such as files and directories.
 D. A domain is an alternative keyword for type.
-
-
 
 Question No : 12 -
 What openssl command will generate a selfsigned test certificate?
@@ -99,7 +84,6 @@ B. openssl sign key privkey.pem out cacert.pem days 365
 C. openssl req key privkey.pem out cacert.pem days 365
 D. openssl sign new x509 key privkey.pem out cacert.pem days 365
 
-
 Question No : 13 -
 What openssl command will generate a certificate signing request (CSR) using the private
 key file privkey.pem?
@@ -107,7 +91,6 @@ A. openssl req key privkey.pem out cert.csr
 B. openssl req new key privkey.pem out cert.csr
 C. openssl gencsr key privkey.pem out cert.csr
 D. openssl gencsr new key privkey.pem out cert.csr
-
 
 Question No : 14 -
 You have downloaded a file named file.tgz along with a signature file named file.tgz.asc.
@@ -120,11 +103,9 @@ C. gpg verify file.tgz.asc
 D. gpgv verify file.tgz.asc
 E. gpgv file.tgz.asc
 
-
 Question No : 15 -
 Which LUKS action, when supplied to the cryptsetup command, will initialize a LUKS
 partition and set the initial key? (Provide only the action name)
-
 
 Question No : 16 -
 What is the purpose of snort inline?
@@ -132,7 +113,6 @@ A. To run the snort daemon without forking child processes.
 B. To have iptables use snort rules to filter packets.
 C. To have snort log suspicious activity only, without performing any actions
 D. To run the snort daemon as a nonroot user.
-
 
 Question No : 17 -
 Which GPG command is used to sign a public key? (Select TWO correct answers)
@@ -142,8 +122,6 @@ C. gpg sign UID
 D. gpg editkey UID followed with the sign command.
 E. gpg editkey UID followed with the confirm command.
 
-
-
 Question No : 18 -
 Which of the following rule directives will email kevin@example.com and
 matt@example.com when the Mail Configuration rule is violated?
@@ -151,7 +129,6 @@ A. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@exam
 B. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@example.com,matt@example.com )
 C. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@example.com;matt@example.com )
 D. ( rulename = "Mail Configuration", severity = $(SIG_HI), emailto = kevin@example.com, emailcc = matt@example.com )
-
 
 Question No : 19 -
 An administrator can prevent dictionary based attacks against an OpenSSH server by
@@ -171,10 +148,8 @@ C. Require clients to authenticate with a password before querying the server.
 D. Run the BIND daemon in a chroot jail
 E. Encrypt DNS traffic using SSL/TLS.
 
-
 Question No : 21 -
 In Nessus, what does the acronym NASL stand for?
-
 
 Question No : 22 -
 You are certain that your kernel has been compiled with ACL support, however, when you
@@ -187,24 +162,21 @@ B. There is no user on the system named hugh.
 C. The partition has not been mounted with the acl option.
 D. The file afile.txt doesn't exist.
 
-
 Question No : 23 -
-Which of the following are valid ntop deployment scenarios? (Select THREE correct
+Which of the following are valid ntop deployment scenarios? (Select THREE correct answers)
 A. Public Site
 B. Switched Gateway
 C. Simple Host
 D. Border Gateway
 E. Mirror Line
 
-
 Question No : 24 -
-Which of the following are common techniques for securing a sendmail server? (Select
+Which of the following are common techniques for securing a sendmail server? (Select THREE correct answers)
 A. Maintain user accounts in an LDAP directory.
 B. Enable TLS.
 C. Disable VRFY.
 D. Run sendmail in a chroot'd environment.
 E. Disable USRLKUP.
-
 
 Question No : 25 -
 A. Contacts
@@ -217,22 +189,20 @@ Anwser: A,B,C
 
 Question No : 26 -
 Which of the following statements are advantages that Mandatory Access Control has over
+Discretionary Access Control models? (Select TWO correct answers)
 A. MAC policies are easier to configure than use of DAC.
 B. MAC adds the concept of privileged remote users which is not available with simple DAC.
 C. MAC policies increase the ability of the root user to correct errors.
 D. MAC lets the kernel help decide if an object, such as a device or process, can access another object.
 E. Trust is placed in the administrators and not in individual users.
 
-
-
 Question No : 27 -
-Which of the following are valid NFSv4 security types?
+Which of the following are valid NFSv4 security types? (Select THREE correct answers)
 A. RSA
 B. SSL
 C. SPKM
 D. Kerberos
 E. LIPKEY
-
 
 Question No : 28 -
 The apache administrator has added the following lines to the configuration files:
@@ -245,11 +215,9 @@ B. It prevents HTML files from being served out of the / directory.
 C. It stops users from setting up .htaccess files unless specifically allowed in additional configuration.
 D. It prevents CGI scripts from modifying apache features dynamically.
 
-
 Question No : 29 -
 Which utility is used for retrieving, setting, and removing NFSv4 ACLs? (Supply only the
 command name, with no options or parameters)
-
 
 Question No : 30 -
 An administrator has created a mapping with the following command:
@@ -259,7 +227,6 @@ A. cryptsetup luksDelKey /dev/sda1 0
 B. cryptsetup luksDelKey /dev/sda1 1
 C. cryptsetup luksDelKey /dev/mapper/cryptvol 1
 D. cryptsetup luksDelKey /dev/mapper/cryptvol 0
-
 
 Question No : 31 -
 An administrator has successfully configured a cryptographic volume for dmcrypt, and has
