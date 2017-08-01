@@ -672,23 +672,22 @@ B. Standard Linux permissions override SELinux permissions.
 C. SELinux permissions are verified before standard Linux permissions.
 D. SELinux permissions are verified after standard Linux permissions.
 
-
 Question No : 82 -
 Which of the following statements are true about Linux Extended Attributes on files?
+(Select TWO correct answers)
 A. An attribute value may be empty.
 B. Attribute storage counts toward disk quota use.
 C. Attribute use is enabled by mounting a partition with the attr option.
 D. An attribute is file, not inode, specific. Thus, a hard linked file in two locations could have different attributes.
 E. Attributes are not used by SELinux and other kernel security modules.
 
-
 Question No : 83 -
+Which of the following are valid dmcrypt modes? (Choose THREE correct answers)
 A. XTS
 B. ESSIV
 C. GMR
 D. KWG
 E. LRW
-
 
 Question No : 84 -
 An administrator is capturing traffic with Wireshark and is only seeing ARP traffic. What is
@@ -697,7 +696,6 @@ A. The network interface on which the scan is running is not in promiscuous mode
 B. The machine is on a switched network and is therefore only seeing local and broadcast/multicast packets.
 C. The administrator did not enable the TCP and UDP options when starting the scan.
 D. The network interface on which the scan is running has the ARP_ONLY flag set.
-
 
 Question No : 85 -
 What does the following iptables rule accomplish:
@@ -791,6 +789,7 @@ E. RST
 
 Question No : 95 -
 What is true about the permissions for the file afile given the following output from getfacl?
+(Select TWO correct answers)
 % getfacl afile
 # file: afile
 # owner: matt
@@ -819,6 +818,7 @@ D. l
 Question No : 97 -
 Which statements are true of the following Wireshark capture filter:
 (tcp[2:2] > 1500 and tcp[2:2] < 1550) or (tcp[4:2] > 1500 and tcp[4:2] < 1550)
+(Select TWO correct answers)
 A. Every packet being checked has a 2 byte offset.
 B. Traffic on ports 15001550 is being captured.
 C. Traffic on ports 15011549 is being captured.
@@ -836,6 +836,7 @@ D. *.* host=remotehost
 
 Question No : 99 -
 In which of the following scenarios MUST an administrator use ethernet bridging instead of
+routing when configuring an OpenVPN site? (Select TWO correct answers)
 A. Some OpenVPN clients will be installed on laptops and must be able to connect from different locations.
 B. NetBIOS traffic must be able to traverse the VPN without implementing a WINS server.
 C. The IPv4 protocol is required.
