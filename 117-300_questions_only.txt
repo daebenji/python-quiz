@@ -599,14 +599,12 @@ B. Drops all traffic coming from the host 10.142.232.1 destined for port 20 or 2
 C. Accepts all traffic from the host 10.142.232.1 destined for port 20 or 21.
 D. Forwards all traffic on port 20 and 21 to the host 10.142.232.1.
 
-
 Question No : 80 -
 In the Puppet centralized configuration management tool, a manifest is:
 A. a list of all target configurations.
 B. a configuration document that describes the target configuration and the steps required to achieve it.
 C. a list of all files related to a configuration target.
 D. a list of the important services on a target configuration.
-
 
 Question No : 81 -
 How are SELinux permissions related to standard Linux permissions?
@@ -656,7 +654,6 @@ B. gpg editkey name followed with the revoke command.
 C. gpg revoke name
 D. gpg createrevoke name
 
-
 Question No : 87 -
 What openssl command will generate a private RSA key of 2048 bits and no passphrase?
 A. openssl genrsa des3 out privkey.pem 2048
@@ -664,14 +661,12 @@ B. openssl genrsa out privkey.pem 2048
 C. openssl genrsa nopass out privkey.pem 2048
 D. openssl genrsa nopass des3 out privkey.pem 2048
 
-
 Question No : 88 -
 What is one of the primary claimed benefits of Smack over SELinux?
 A. Smack implements Rule Set Based Access Control. SELinux doesn't support this model.
 B. SELinux has export restrictions placed on it by the NSA.
 C. Configuration of Smack is much more simple.
 D. Smack allows users to share files without administrator intervention.
-
 
 Question No : 89 -
 Which of the following are common techniques for securing Nagios? (Select THREE
@@ -681,7 +676,6 @@ C. Compile Nagios with the enabletls option.
 D. Do not run as the root user.
 E. Disable external commands.
 
-
 Question No : 90 -
 Which of the following is NOT included in a Snort rule header?
 A. protocol
@@ -690,14 +684,12 @@ C. source IP address
 D. packet byte offset
 E. source port
 
-
 Question No : 91 -
 What is the purpose of the Safe Checks option in a Nessus configuration?
 A. Enables secure scanning over an encrypted tunnel.
 B. To prevent the use of plugins which may have a negative effect on the network being scanned.
 C. To prevent the use of plugins which may leave the Nessus server vulnerable during the scanning process.
 D. When validating a Nessus configuration file, the nessusd process will not be interrupted.
-
 
 Question No : 92 -
 A user is attempting to connect to a remote server via SSH and receives the following
@@ -711,7 +703,6 @@ B. The user's SSH client was unable to connect to the remote host's authenticati
 C. The user's SSH client is incompatible with the server's RSA key.
 D. The server's SSH host key cannot be found in the list of known hosts.
 
-
 Question No : 93 -
 Which of the following are builtin chains for the iptables nat table? (Select THREE correct
 A. OUTPUT
@@ -720,7 +711,6 @@ C. PROCESSING
 D. POSTROUTING
 E. PREROUTING
 
-
 Question No : 94 -
 Which of the following is NOT and valid scan technique with nmap?
 A. Window
@@ -728,7 +718,6 @@ B. SYN
 C. ACK
 D. Connect()
 E. RST
-
 
 Question No : 95 -
 What is true about the permissions for the file afile given the following output from getfacl?
@@ -749,14 +738,12 @@ C. Anyone in the users group will be able to read the file.
 D. The user matt will not be able to edit this file.
 E. Anyone in the staff group will be able to read and execute the file.
 
-
 Question No : 96 -
 Which option is required to syslogd in order for it to accept remote log messages?
 A. s
 B. r
 C. remote
 D. l
-
 
 Question No : 97 -
 Which statements are true of the following Wireshark capture filter:
@@ -768,14 +755,12 @@ C. Traffic on ports 15011549 is being captured.
 D. Only two bytes are being checked in each packet.
 E. Up to four bytes are being check in each packet.
 
-
 Question No : 98 -
 Which syslog configuration line will send out logged messages to a remote syslog server?
 A. *.* host:remotehost
 B. *.* remote remotehost
 C. *.* @remotehost
 D. *.* host=remotehost
-
 
 Question No : 99 -
 In which of the following scenarios MUST an administrator use ethernet bridging instead of
@@ -786,14 +771,12 @@ C. The IPv4 protocol is required.
 D. It will be necessary to use an MTU setting other than the default.
 E. The IPX protocol is required.
 
-
 Question No : 100 -
 What is an SO rule in the context of Snort?
 A. A loadable snort module.
 B. A rule which can be written in the Perl programming language.
 C. A simple object.
 D. A snort overflow
-
 
 Question No : 101 -
 How does AppArmor configure its access control settings?
