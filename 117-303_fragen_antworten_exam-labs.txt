@@ -997,3 +997,500 @@ C. AppArmor relies on precompiled policies. These policies are updated with new 
 D. A profile is assigned per application that specifies the system resources available to the application.
 
 Answer : D
+
+QUESTION 1
+Which of the following commands adds a new user usera to FreelPA?
+A. useradd usera --directory ipa --gecos *User A"
+B. idap- useradd --H ldaps://ipa-server CN=UserA --attribs "Firstname: User: Lastname: A"
+C. ipa-admin create user --account usera -_fname User --iname A
+D. ipa user-add usera --first User --last A
+E. ipa-user- add usera --name "User A"
+
+Answer: D
+
+QUESTION 2
+Which option of the openvpn command should be used to ensure that ephemeral keys are not written to the swap space?
+A. --mlock
+B. --no-swap
+C. --root-swap
+D. --keys-no-swap
+
+Answer: A
+
+QUESTION 3
+Which of the following statements is used in a parameter file for setkey in order to create a new SPD entry?
+A. spd
+B. addspd
+C. newspd
+D. spdnew
+E. spdadd
+
+Answer: E
+
+QUESTION 4
+New VCE and PDF Exam Dumps from PassLeader
+￼Which of the following terms refer to existing scan techniques with nmap? (Choose TWO correct answers.)
+A. Xmas Scan
+B. Zero Scan
+C. FIN Scan
+D. IP Scan
+E. UDP SYN Scan
+
+Answer: A,C
+
+QUESTION 5
+When OpenVPN sends a control packet to its peer, it expects an acknowledgement in 2 seconds by default. Which of the following options changes the timeout period to 5 seconds?
+A. -tls-timeout 5
+B. -tls- timeout 500
+C. -tls- timer 5
+D. -tls- timer 500
+
+Answer: A
+
+QUESTION 6
+Which of the following commands makes the contents of the eCryptfs encrypted directory - /Private available to the user?
+A. ecryptfsclient
+B. ecryptfs.mount
+C. ecryptfs-mount-private
+D. decryptfs
+E. ecryptfs-manage-directory
+
+Answer: C
+
+QUESTION 8
+How does TSIG authenticate name servers in order to perform secured zone transfers?
+A. Both servers mutually verify their X509 certificates.
+B. Both servers use a secret key that is shared between the servers.
+C. Both servers verify appropriate DANE records for the labels of NS records used to delegate the transferred zone.
+D. Both servers use DNSSEC to mutually verify that they are authoritative for the transferred zone.
+
+Answer: B
+
+Question 9
+Which of the following are differences between AppArmor and SELinux? (Choose TWO correct answers.)
+A. AppArmor is implemented in user space only. SELinux is a Linux Kernel Module.
+B. AppArmor is less complex and easier to configure than SELinux.
+C. AppArmor neither requires nor allows any specific configuration. SELinux must always be manually configured.
+D. SELinux stores information in extended file attributes. AppArmor does not maintain file specific information and states.
+E. The SELinux configuration is loaded at boot time and cannot be changed later on AppArmor provides user space tools to change its behavior.
+
+Answer: BD 
+
+QUESTION 10
+Which of the following commands adds users using SSSD's local service?
+A. sss_adduser
+B. sss_useradd
+C. sss_add
+D. sss_addlocaluser
+E. sss_local_adduser
+
+Answer: B
+
+QUESTION 11
+Which of the following statements are true regarding the certificate? (Choose THREE correct answers.)
+A.  ￼This certificate belongs to a certification authority.
+B.  ￼This certificate may be used to sign certificates of subordinate certification authorities.
+C.  ￼This certificate may never be used to sign any other certificates.
+D.  ￼This certificate may be used to sign certificates that are not also a certification authority.
+E.  ￼This certificate will not be accepted by programs that do not understand the listed extension.
+
+Answer: ABD
+
+QUESTION 12
+Which of the following statements are valid wireshark capture filters? (Choose TWO correct answers.)
+A.  ￼port range 10000:tcp-15000:tcp
+B.  ￼port-range tcp 10000-15000
+C.  ￼tcp portrange 10000-15000
+D.  ￼portrange 10000/tcp-15000/tcp
+E.  ￼portrange 10000-15000 and tcp
+
+Answer: CE
+
+QUESTION 13
+Which of the following openssl commands generates a certificate signing request (CSR) using the already existing private key contained in the file private/keypair.pem?
+A.  ￼openssl req -key private/keypair.pem -out req/csr.pem
+B.  ￼openssl req - new -key private/keypair.pem -out req/csr.pem
+C.  ￼openssl gencsr -key private/keypair.pem -out req/csr.pem
+D.  ￼openssl gencsr -new- key private/keypair.pem -out req/csr.pem
+￼￼￼￼￼
+Answer: B 
+
+QUESTION 14
+Which of the following command lines sets the administrator password for ntop to testing 123?
+A.  ￼ntop --set-admin-password=testing123
+B.  ￼ntop --set-password-testing123
+C.  ￼ntop --reset-password=testing 123
+D.  ￼ntop --set-new-password=testing123
+
+Answer: A 
+
+QUESTION 15
+Which of the following statements is true about chroot environments?
+A.  ￼Symbolic links to data outside the chroot path are followed, making files and directories accessible
+B.  ￼Hard links to files outside the chroot path are not followed, to increase security
+C.  ￼The chroot path needs to contain all data required by the programs running in the chroot environment
+D.  ￼Programs are not able to set a chroot path by using a function call, they have to use the command chroot
+E.  ￼When using the command chroot, the started command is running in its own namespace and cannot communicate with other processes
+
+Answer: C
+
+QUESTION 16
+Which option in an Apache HTTPD configuration file enables OCSP stapling? (Specify ONLY the option name without any values or parameters.)
+Answer: httpd-ssl.conf
+
+QUESTION 17
+What option of mount.cifs specifies the user that appears as the local owner of the files of a mounted CIFS share when the server does not provide ownership information? (Specify ONLY the option name without any values or parameters.)
+
+Answer: uld=arg 
+
+QUESTION 18
+Which of the following expressions are valid AIDE rules? (Choose TWO correct answers.)
+A.  ￼!/var/run/.*
+B.  ￼append: /var/log/*
+C.  ￼/usr=all
+D.  ￼#/bin/
+E.  ￼/etc p+i+u+g
+￼￼￼￼
+Answer: AE
+
+QUESTION 19
+Which directive is used in an OpenVPN server configuration in order to send network configuration information to the client? (Specify ONLY the option name without any values or parameters.)
+Answer: push 
+
+QUESTION 20
+Which of the following authentication methods was added to NFS in version 4?
+A.  ￼Kerberos authentication
+B.  ￼SSH hostkey authentication
+C.  ￼Winbind authentication
+D.  ￼SSL certificate authentication
+
+Answer: A
+
+QUESTION 21
+Which of the following commands defines an audit rule that monitors read and write operations to the file/ etc/firewall/rules and associates the rule with the name firewall?
+A.  ￼auditctl -N firewall -r r: /etc/firewall/rules -r w: etc/firewall/rules
+B.  ￼auditctl -A -f /etc/firewall/rules -p rw -k firewall
+C.  ￼auditctl -w /etc/firewall/rules -p rw -k firewall
+D.  ￼auditctl -_read /etc/firewall/rules -_write /etc/firewall/rules --label firewall
+E.  ￼echo "n: firewall r:/etc/firewall/rules: w:/ etc/firewall/rules:" | auditctl ~
+
+Answer: C
+
+QUESTION 22
+Which of the following information, within a DNSSEC- signed zone, is signed by the key signing key?
+A.  ￼The non-DNSSEC records like A, AAAA or MX.
+B.  ￼The zone signing key of the zone.
+C.  ￼The RRSIG records of the zone.
+D.  ￼The NSEC or NSEC3 records of the zone.
+E.  ￼The DS records pointing to the zone.
+
+Answer: B
+
+QUESTION 23
+Which of the following lines in an OpenSSL configuration adds an X 509v3 Subject Alternative Name extension for the host names example.org and www.example.org to a certificate?
+A.  ￼subjectAltName = DNS: www example.org, DNS: example.org
+B.  ￼extension = SAN: www.example.org, SAN: example.org
+C.  ￼subjectAltName: www.example.org, subjectAltName: example.org
+D.  ￼commonName = subjectAltName = www.example.org, subjectAltName = example.org
+E.  ￼subject = CN = www.example.org, CN = example.org
+￼￼￼￼￼
+Answer: A
+
+QUESTION 24
+Which command is used to run a new shell for a user changing the SELinux context? (Specify ONLY the command without any path or parameters.)
+Answer: newrole
+
+QUESTION 25
+Which of the following configuration options makes Apache HTTPD require a client certificate for authentication?
+A.  ￼Limit valid-x509
+B.  ￼SSLRequestClientCert always
+C.  ￼Require valid-x509
+D.  ￼SSLVerifyClient require
+E.  ￼SSLPolicy valid-client-cert
+
+Answer: D
+
+QUESTION 26
+Given a proper network and name resolution setup, which of the following commands establishes a trust between a FreelPA domain and an Active Directory domain?
+A.  ￼ipa trust-add --type ad addom --admin Administrator --password
+B.  ￼ipa-ad -add-trust --account ADDOM\Administrator--query-password
+C.  ￼net ad ipajoin addom -U Administrator -p
+D.  ￼trustmanager add -_domain ad: //addom --user Administrator -w
+E.  ￼ipa ad join addom -U Administrator -w
+
+Answer: A
+
+QUESTION 27
+Which of the following resources of a shell and its child processes can be controlled by the Bash build-in command ulimit? (Choose THREE correct answers.)
+A.  ￼The maximum size of written files
+B.  ￼The maximum number of open file descriptors
+C.  ￼The maximum number of newly created files
+D.  ￼The maximum number of environment variables
+E.  ￼The maximum number of user processes
+
+Answer: ABE
+
+QUESTION 28
+Linux Extended File Attributes are organized in namespaces. Which of the following names correspond to existing attribute namespaces? (Choose THREE correct answers.)
+A.  ￼default
+B.  ￼system
+C.  ￼owner
+D.  ￼trusted
+E.  ￼user
+￼￼￼￼￼
+Answer: BDE 
+
+QUESTION 29
+Which of the following stanzas is a valid client configuration for Free RADIUS?
+A.  client pnvate-network-1 { ipaddr = 192 0 2.0/24 password = testing123-1 }
+B.  client private-network-1 { ip = 192.0.2.0/24 password = testing123-1 }
+C.  client private-network-1 { ip = 192 0 2.0/24 passwd = testing123-1 }
+D.  client private-network-1 { ip = 192 0.2.0/24 secret = testing123-1 }
+E.  client private-network-1 { ipaddr = 192 0 2.0/24 secret = testing123-1 }
+
+Answer: E
+
+QUESTION 30
+Which of the following practices are important for the security of private keys? (Choose TWO correct answers.)
+A.  Private keys should be created on the systems where they will be used and should never leave them.
+B.  private keys should be uploaded to public key servers.
+C.  Private keys should be included in X509 certificates.
+D.  Private keys should have a sufficient length for the algorithm used for key generation.
+E.  Private keys should always be stored as plain text files without any encryption.
+
+Answer: CD
+
+QUESTION 31
+Given that this device has three different keys, which of the following commands deletes only the first key?
+A.  ￼cryptsetup luksDelKey /dev/sda 1 0
+B.  ￼cryptsetup luksDelkey /dev/sda 1 1
+C.  ￼cryptsetup luksDelKey / dev /mapper/crypt- vol 1
+D.  ￼cryptsetup luksDelKey / dev /mapper/crypt- vol 0
+
+Answer: A
+
+QUESTION 32
+What command is used to update NVTs from the OpenVAS NVT feed? (Specify ONLY the command without any path or parameters.)
+Answer: openvas-nvt-sync
+
+QUESTION 33
+Which command included in the Linux Audit system provides searching and filtering of the audit log? (Specify ONLY the command without any path or parameters.)
+Answer: ausearch
+
+QUESTION 34
+Which of the following types can be specified within the Linux Audit system? (Choose THREE correct answers.)
+A.  ￼Control rules
+B.  ￼File system rules
+C.  ￼Network connection rules
+D.  ￼Console rules
+E.  ￼System call rules
+￼￼￼￼
+Answer: ABE
+
+QUESTION 35
+Which of the following sections are allowed within the Kerberos configuration file krb5.conf? (Choose THREE correct answers.)
+A.  ￼[plugins]
+B.  ￼[crypto]
+C.  ￼[domain]
+D.  ￼[capaths]
+E.  ￼[realms]
+
+Answer: ADE
+
+QUESTION 36
+Which of the following parameters to openssl s_client specifies the host name to use for TLS Server Name Indication?
+A.  ￼-tlsname
+B.  ￼-servername
+C.  ￼-sniname
+D.  ￼-vhost
+E.  ￼-host
+
+Answer: B 
+
+QUESTION 37
+Which of the following statements is true regarding eCryptfs?
+A.  ￼For every file in an eCryptfs directory there exists a corresponding file that contains the encrypted content.
+B.  ￼The content of all files in an eCryptfs directory is stored in an archive file similar to a tar file with an additional index to improve performance.
+C.  ￼After unmounting an eCryptfs directory, the directory hierarchy and the original file names are still visible, although, it is not possible to view the contents of the files.
+D.  ￼When a user changes his login password, the contents of his eCryptfs home directory has to be re-encrypted using his new login password.
+E.  ￼eCryptfs cannot be used to encrypt only directories that are the home directory of a regular Linux user.
+
+Answer: E
+
+QUESTION 38
+Which of the following methods can be used to deactivate a rule in Snort? (Choose TWO correct answers.)
+A.  By placing a # in front of the rule and restarting Snort.
+B.  By placing a pass rule in local.rules and restarting Snort.
+C.  By deleting the rule and waiting for Snort to reload its rules files automatically.
+D.  By adding a pass rule to /etc/snort/rules.deactivated and waiting for Snort to reload its rules files automatically.
+
+Answer: BC 
+
+QUESTION 39
+What happens when the command getfattr afile is run while the file afile has no extended attributes set?
+A.  ￼getfattr prints a warning and exits with a values of 0.
+B.  ￼getfattr prints a warning and exits with a value of 1.
+C.  ￼No output is produced and getfattr exits with a value of 0.
+D.  ￼No outputs is produced and getfattr exits with a value of 1.
+
+Answer: C
+
+QUESTION 40
+What effect does the configuration SSLStrictSNIVHostCheck on have on an Apache HTTPD virtual host?
+A.  ￼The clients connecting to the virtual host must provide a client certificate that was issued by the same CA that issued the server's certificate.
+B.  ￼The virtual host is served only to clients that support SNI.
+C.  ￼All of the names of the virtual host must be within the same DNS zone.
+D.  ￼The virtual host is used as a fallback default for all clients that do not support SNI.
+E.  ￼Despite its configuration, the virtual host is served only on the common name and Subject Alternative Names of the server certificates.
+
+Answer: B
+
+QUESTION 41
+What is the purpose of IP sets?
+A.  ￼They group together IP addresses that are assigned to the same network interfaces.
+B.  ￼They group together IP addresses and networks that can be referenced by the network routing table.
+C.  ￼They group together IP addresses that can be referenced by netfilter rules.
+D.  ￼They group together IP and MAC addresses used by the neighbors on the local network.
+E.  ￼They group together IP addresses and user names that can be referenced from /etc/hosts allow and /etc/hosts deny
+
+Answer: C 
+
+QUESTION 42
+Which of the following components are part of FreeIPA? (Choose THREE correct answers.)
+A.  ￼DHCP Server
+B.  ￼Kerberos KDC
+C.  ￼Intrusion Detection System
+D.  ￼Public Key Infrastructure
+E.  ￼Directory Server
+
+Answer: BDE 
+
+QUESTION 43
+What is the purpose of the program snort-stat?
+A.  ￼It displays statistics from the running Snort process.
+B.  ￼It returns the status of all configured network devices.
+C.  ￼It reports whether the Snort process is still running and processing packets.
+D.  ￼It displays the status of all Snort processes.
+E.  ￼It reads syslog files containing Snort information and generates port scan statistics.
+￼￼￼￼
+Answer: E 
+
+QUESTION 44
+Which of the following access control models is established by using SELinux?
+A.  ￼Security Access Control (SAC)
+B.  ￼Group Access Control (GAC)
+C.  ￼User Access Control (UAC)
+D.  ￼Discretionary Access Control (DAC)
+E.  ￼Mandatory Access Control (MAC)
+
+Answer: E
+
+QUESTION 45
+Which of the following prefixes could be present in the output of getcifsacl? (Choose THREE correct answers.)
+A.  ￼ACL
+B.  ￼GRANT
+C.  ￼GROUP
+D.  ￼OWNER
+E.  ￼SID
+
+Answer: ACE
+
+QUESTION 46
+What effect does the following command have on TCP packets?
+iptables- A INPUT -d 10 142 232.1 -p tcp -dport 20:21 -j ACCEPT
+A.  ￼Forward all TCP traffic not on port 20 or 21 to the IP address 10.142 232.1
+B.  ￼Drop all TCP traffic coming from 10 142 232.1 destined for port 20 or 21
+C.  ￼Accept only TCP traffic from 10.142 232.1 destined for port 20 or 21
+D.  ￼Accept all TCP traffic on port 20 and 21 for the IP address 10.142.232.1
+
+Answer: C
+
+QUESTION 47
+How are SELinux permissions related to standard Linux permissions? (Choose TWO correct answers.)
+A.  ￼SELinux permissions overnde standard Linux permissions.
+B.  ￼standard Linux permissions override SELinux permissions.
+C.  ￼SELinux permissions are verified before standard Linux permissions.
+D.  ￼SELinux permissions are verified after standard Linux permissions.
+
+Answer: BD 
+
+QUESTION 48
+Which of the following commands disables the automatic password expiry for the user usera?
+A.  ￼chage --maxdays none usera
+B.  ￼chage --maxdays 99 usera
+C.  ￼chage --maxdays -1 usera
+D.  ￼chage --lastday none usera
+E.  ￼chage --lastday 0 usera
+
+Answer: C
+
+QUESTION 49
+Which of the following commands changes the source IP address to 192.0.2.11 for all IPv4 packets which go through the network interface eth0?
+A.  ￼iptables ~t nat -A POSTROUTING ~o eth0 -j SNAT -to-source 192.0.2.11
+B.  ￼iptables ~t nat -A PREROUT1NG -\ eth0 -j SNAT -to-source 192.0.2.11
+C.  ￼iptables -t nat -A POSTROUTING H eth0 -j DNAT -to-source 192.0.2.11
+D.  ￼iptables -t mangle -A POSTROUTING -i eth0 -j SNAT -to-source 192.0.2.11
+E.  ￼iptables -t mangle -A POSTROUTING -0 eth0 -j SNAT -to-source 192.0.2.11
+
+Answer: A
+
+QUESTION 50
+Which command, included in BIND, generates DNSSEC keys? (Specify ONLY the command without any path or parameters.)
+Answer: dnssec-keygen
+
+QUESTION 51
+Which of the following commands displays all ebtable rules contained in the table filter including their packet and byte counters?
+A.  ￼ebtables -t nat -L -v
+B.  ￼ebtables-L-t filter -Lv
+C.  ￼ebtables-t filter-L-Lc
+D.  ￼ebtables -t filter -Ln -L
+E.  ￼ebtables-L -Lc-t filter
+
+Answer: C
+
+QUESTION 52
+Which of the following statements are true regarding the certificate of a Root CA? (Choose TWO correct answers.)
+A.  ￼It is a self-signed certificate.
+B.  ￼It does not include the private key of the CA.
+C.  ￼It must contain a host name as the common name.
+D.  ￼It has an infinite lifetime and never expires.
+E.  ￼It must contain an X509v3 Authority extension.
+
+Answer: ABE 
+
+QUESTION 53
+Which of the following statements describes the purpose of ndpmon?
+A.  ￼it monitors the network for neighbor discovery messages from new IPv6 hosts and routers.
+B.  ￼it monitors remote hosts by periodically sending echo requests to them.
+C.  ￼it monitors the availability of a network link by querying network interfaces.
+D.  ￼It monitors the network for IPv4 nodes that have not yet migrated to IPv6.
+E.  ￼It monitors log files for failed login attempts in order to block traffic from offending network nodes.
+￼￼￼￼￼
+Answer: A 
+
+QUESTION 54
+In which path is the data, which can be altered by the sysctl command, accessible?
+A.  ￼/dev/sys/
+B.  ￼/sys/
+C.  ￼/proc/sys/
+D.  ￼/sysctl/
+
+Answer: C
+
+QUESTION 55
+Which of the following DNS record types can the command dnssec-signzone add to a zone? (Choose THREE correct answers.)
+A.  ￼ASIG
+B.  ￼NSEC
+C.  ￼NSEC3
+D.  ￼NSSIG
+E.  ￼RRSIG
+
+Answer: BCE
+
+QUESTION 56
+Which DNS label points to the DANE information used to secure HTTPS connections to https://www.example.com/?
+A.  ￼example.com
+B.  ￼dane.www.example.com
+C.  ￼soa.example com
+D.  ￼www.example.com
+E.  ￼_443_tcp.www example.com
