@@ -1140,7 +1140,8 @@ Answer: C
 
 QUESTION 16
 Which option in an Apache HTTPD configuration file enables OCSP stapling? (Specify ONLY the option name without any values or parameters.)
-Answer: httpd-ssl.conf
+
+Answer: SSLUseStapling
 
 QUESTION 17
 What option of mount.cifs specifies the user that appears as the local owner of the files of a mounted CIFS share when the server does not provide ownership information? (Specify ONLY the option name without any values or parameters.)
@@ -1159,6 +1160,7 @@ Answer: AE
 
 QUESTION 19
 Which directive is used in an OpenVPN server configuration in order to send network configuration information to the client? (Specify ONLY the option name without any values or parameters.)
+
 Answer: push 
 
 QUESTION 20
@@ -1172,6 +1174,7 @@ Answer: A
 
 QUESTION 21
 Which of the following commands defines an audit rule that monitors read and write operations to the file/ etc/firewall/rules and associates the rule with the name firewall?
+
 A.  ￼auditctl -N firewall -r r: /etc/firewall/rules -r w: etc/firewall/rules
 B.  ￼auditctl -A -f /etc/firewall/rules -p rw -k firewall
 C.  ￼auditctl -w /etc/firewall/rules -p rw -k firewall
