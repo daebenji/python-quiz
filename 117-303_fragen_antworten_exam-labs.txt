@@ -1087,6 +1087,10 @@ E. sss_local_adduser
 Answer: B
 
 QUESTION 11
+An X509 certificate contains the following information:
+X509v3 Basic Constraints: critical
+CA:TRUE, pathlen:0
+
 Which of the following statements are true regarding the certificate? (Choose THREE correct answers.)
 A.  ￼This certificate belongs to a certification authority.
 B.  ￼This certificate may be used to sign certificates of subordinate certification authorities.
